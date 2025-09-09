@@ -1,0 +1,119 @@
+.collapsed {
+  padding: 22px;
+  height: 100vh;
+  width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  transition: width 0.3s ease-in-out;
+  background: #fff;
+
+  position: -webkit-sticky;
+
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.user_logo {
+  display: grid;
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.closed {
+  width: 62px;
+  transition: width 0.3s ease-in-out;
+
+  .user_logo {
+    margin: 0 -22px;
+    justify-content: center;
+  }
+}
+
+.routes {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.collapseButton {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 3.5px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.collapseButton svg {
+  transform: rotate(-180deg);
+  transition: all 0.2s ease-in;
+}
+
+.collapseButtonClosed svg {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    background: rgba(13, 4, 34, 0.3);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .closedBg {
+    right: -100%;
+  }
+
+  .collapsed {
+    padding: 0 22px;
+    height: 100%;
+    background: var(--white);
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* glass */
+
+    box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.02);
+    overflow-y: auto;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .user {
+    margin-bottom: 20px;
+  }
+
+  .closed {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .rotatedLogo {
+    transform: rotate(0);
+    height: auto;
+  }
+}

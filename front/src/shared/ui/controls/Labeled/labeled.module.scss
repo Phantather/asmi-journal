@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray);
+}
+
+.required {
+  color: var(--red);
+}

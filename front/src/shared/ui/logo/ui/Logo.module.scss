@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 40px;
+  .logo {
+    height: 40px;
+  }
+
+  .title {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Nunito Sans';
+    text-transform: uppercase;
+    display: flex;
+    color: #234182;
+  }
+}
+
+.closed {
+  justify-content: center;
+  .logo {
+    height: 40px;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title {
+    display: none;
+  }
+}

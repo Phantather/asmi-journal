@@ -1,0 +1,54 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+  padding: 0 11px;
+  min-height: 40px;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 -22px;
+}
+
+.active {
+  pointer-events: none;
+  background: var(--bg);
+  ::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 6px;
+    background: var(--primary);
+  }
+
+  .name {
+    color: var(--primary);
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: none;
+  justify-self: left;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--black);
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.nameShow {
+  display: block;
+}

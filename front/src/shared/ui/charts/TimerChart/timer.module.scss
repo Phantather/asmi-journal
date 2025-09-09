@@ -1,0 +1,32 @@
+.wrapper {
+  display: grid;
+  grid-gap: 9px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper svg p {
+  display: none;
+}
+
+.timer {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  text-align: center;
+}

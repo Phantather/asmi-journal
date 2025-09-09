@@ -1,0 +1,201 @@
+.bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.Circles {
+  width: 846px;
+  height: 709px;
+  position: absolute;
+  left: -369px;
+  top: -264px;
+}
+
+.Wave {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 70vh;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 1024px;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  flex-direction: column;
+  position: relative;
+  height: 85vh;
+  max-height: 844px;
+  min-height: 660px;
+
+  .WrapperWave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.bg__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gr);
+  width: 100%;
+
+  .goToIndexPage {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--primary);
+    cursor: pointer;
+  }
+}
+
+.form {
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
+  z-index: 1;
+}
+
+.welcom_logo_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  .welcome {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.005em;
+    text-align: center;
+  }
+
+  .title_st {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: var(--primary);
+  }
+}
+
+.inputsWrapper {
+  position: relative;
+  display: grid;
+  gap: 24px;
+  width: 100%;
+}
+
+.errMessage {
+  width: 100%;
+  font-size: 14px;
+  color: var(--red);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+
+  div {
+    cursor: pointer;
+  }
+}
+
+.unregistered_register {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .unregistered {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.5;
+    color: var(--primary);
+  }
+
+  .register {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--primary);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 16px;
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  .Wave {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 85vh;
+  }
+
+  .welcom_logo_title {
+    gap: 16px;
+  }
+
+  .form {
+    gap: 20px;
+  }
+}

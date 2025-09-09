@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 10px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.iconly {
+  padding: 0 10px;
+  margin: 0 -10px;
+
+  .title {
+    display: none;
+  }
+}
+
+.titlely {
+  padding: 0 24px;
+
+  .icon {
+    display: none;
+  }
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .iconly {
+    .title {
+      display: unset;
+    }
+
+    .icon {
+      display: none;
+    }
+  }
+}

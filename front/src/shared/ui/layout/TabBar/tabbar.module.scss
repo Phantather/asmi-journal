@@ -1,0 +1,33 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  visibility: visible;
+  transition: all 250ms linear;
+  z-index: 8;
+
+  display: flex;
+}
+
+.innerWrapper {
+  background: var(--gr);
+  padding: 16px 26px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  visibility: hidden;
+  transition: all 250ms linear;
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: 300px) {
+  .wrapper {
+    display: none;
+  }
+}

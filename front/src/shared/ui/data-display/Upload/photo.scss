@@ -1,0 +1,53 @@
+.imageUploadWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .upload-button {
+    height: 140px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .avatar-uploader {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--stroke);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+
+    .ant-upload {
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      border: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .uploader-image {
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+      transition: all ease-in 0.2s;
+      position: relative;
+    }
+    .uploader-image:hover {
+      filter: blur(1px);
+      transition: all ease-in 0.2s;
+    }
+  }
+}

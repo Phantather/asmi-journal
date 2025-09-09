@@ -1,0 +1,15 @@
+{
+  "form": {
+    "diplom": "project-unique-title"
+  },
+  "warning": "Көңүл бургула!",
+  "isFreeApp": "мамлекеттик программа, акысыз берилет!",
+  "registry": "project-unique-registry",
+  "copyright": "© КР ББИМ Бардык укуктар корголгон",
+  "createdBy": "КР ББИМге караштуу 'Cанариптик билим берүү борбору' ММ тарабынан иштелип чыккан",
+  "links": {
+    "agreement": "Колдонуучулук макулдашуу",
+    "privacyPolicy": "Купуялык саясаты",
+    "technicalSupport": "Техникалык колдоо е-майл"
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 19.05px;
+  .logo {
+    width: 100ppx;
+    height: 100px;
+  }
+
+  .title {
+    margin-top: 8px;
+    display: inline-block;
+    color: #1c1917;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    line-height: 18.4px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    .title {
+      display: none;
+    }
+  }
+}

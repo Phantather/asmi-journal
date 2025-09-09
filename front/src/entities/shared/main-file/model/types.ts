@@ -1,0 +1,10 @@
+export interface MainFileItem {
+  id_guide_files: number;
+  id_vehicle: number;
+  vehicle_name: string;
+  id_guide: number;
+  file_name: string;
+  image: any;
+}
+
+export interface MainFile extends Array<MainFileItem> {}

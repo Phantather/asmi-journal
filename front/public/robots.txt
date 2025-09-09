@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /$
+Allow: /login
+
+Sitemap: https://sub-dimain.edu.gov.kg/sitemap.xml

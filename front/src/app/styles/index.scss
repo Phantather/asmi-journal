@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap');
+
+
+html body {
+  width: 100%!important;
+  overflow: unset!important;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth!important;
+  height: 100vh;
+  --primary: #202f5b;
+  --secondary: #0b00ea;
+  --black: #000;
+  --gray: #858585;
+  --secondGray: #B3B3B3;
+  --white: #fff;
+  --white700: rgba(255, 255, 255, 0.7);
+  --green: #8fbb33;
+  --orange: #ef7f1a;
+  --yellow: #ffd60a;
+  --red: #ff4d4f;
+
+  --bg: #f1f4f9;
+  --content: #fff;
+  --border: #dedede;
+  --modal: #f0f0f0;
+  --stroke: #8b8b8b;
+  --gr: #4f679b;
+  --grv: linear-gradient(225deg, #bb65ff 0%, #4c6fff 100%);
+  --box-shadow: 0px 0px 20px rgba(40, 105, 254, 0.07);
+}
+
+//#root {
+//  height: 100%;
+//}
+
+* {
+  // font-family: 'Poppins', sans-serif !important;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  // font-size: 15px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--black);
+  margin: 0;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+//h1 {
+//  font-family: 'Hyundai Sans Head Office', sans-serif;
+//  font-weight: 500!important;
+//}
+//
+//h2, h3, h4, h5 {
+//  font-family: 'Hyundai Sans Head Regular', sans-serif;
+//  font-weight: 400!important;
+//}
+
+//p {
+//    font-family: 'Hyundai Sans Text', sans-serif;
+//    font-weight: 400;
+//    font-size: 15px;
+//    line-height: 1.5;
+//}
+
+b {
+  font-weight: 600;
+}
+
+input {
+  font-size: 15px;
+}
+
+// input[type='date'] {
+//   position: relative;
+//   padding: 0;
+//   background-repeat: no-repeat;
+//   background-position: bottom 0 right 0;
+//   margin-right: -30px;
+//   height: 100%;
+// }
+
+// input[type='date']::after {
+//   content: '\f133';
+//   font-family: FontAwesome;
+//   position: absolute;
+//   top: 6px;
+//   right: 1px;
+//   font-size: 17px;
+//   color: var(--main_color);
+// }
+
+// input[type='date']::-webkit-calendar-picker-indicator {
+//   color: transparent;
+//   background: none;
+//   z-index: 1;
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// input:focus,
+// input:focus-within,
+// input:active,
+// input:-internal-autofill-selected {
+//   border: none;
+//   box-shadow: none;
+//   outline: none;
+//   background: none !important;
+// }
+
+// textarea {
+//   background: none;
+// }
+
+// textarea:focus,
+// textarea:focus-within,
+// textarea:active,
+// textarea:-internal-autofill-selected {
+//   border: none;
+//   box-shadow: none;
+//   outline: none;
+//   background: none !important;
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 6000000000000s 0s, color 6000000000000s 0s !important;
+  -webkit-transition: background-color 6000000000000s 0s, color 6000000000000s 0s !important;
+  -moz-transition: background-color 6000000000000s 0s, color 6000000000000s 0s !important;
+  -ms-transition: background-color 6000000000000s 0s, color 6000000000000s 0s !important;
+  -o-transition: background-color 6000000000000s 0s, color 6000000000000s 0s !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+//::-webkit-scrollbar {
+//  width: 6px;
+//  height: 6px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//  background-color: var(--primary);
+//  border-radius: 10px;
+//}
+
+
+.swiper {
+  width: 100% !important;
+  height: 100%;
+  //padding: 50px 0 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px!important;
+  height: 10px!important;
+  background: #fff!important;
+  //opacity: 1;
+  border: 1px solid var(--primary) !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary) !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+ opacity: 1;
+}
+
+.mySwiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 87px;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.carMySwiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.carMySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 87px;
+  object-fit: cover;
+}
+
+
+.ant-dropdown ul li {
+  padding: 0 !important;
+}
+
+.cars-tabs .ant-tabs-nav::before,.ant-tabs-nav-wrap::before,.ant-tabs-nav-wrap::after {
+ display: none;
+}
+.cars-tabs .ant-tabs-tab {
+  padding: 0!important;
+  font-size: 16px!important;
+}
+
+.cars-tabs .ant-tabs-ink-bar {
+  display: none;
+}
+
+.select .ant-select-selector{
+  border-radius: 0!important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #002C5F!important;
+}
+
+
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-icon div {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.burger-icon.open .line1 {
+  transform: rotate(45deg) translate(5px, 7px);
+}
+
+.burger-icon.open .line2 {
+  opacity: 0;
+}
+
+.burger-icon.open .line3 {
+  transform: rotate(-45deg) translate(5px, -7px);
+}
+
+.custom-quill .ql-container {
+  height: 300px; /* Задайте нужную высоту */
+  background-color: white; /* Белый фон */
+}
+
+
+/* Set dropdown font-families */
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="inter"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="inter"]::before {
+  font-family: "Inter", sans-serif;
+  content: "Inter";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="arial"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="arial"]::before {
+  font-family: "Arial", sans-serif;
+  content: "Arial";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="times-new-roman"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="times-new-roman"]::before {
+  font-family: "Times New Roman", serif;
+  content: "Times New Roman";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="courier-new"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="courier-new"]::before {
+  font-family: "Courier New", monospace;
+  content: "Courier New";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="georgia"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="georgia"]::before {
+  font-family: "Georgia", serif;
+  content: "Georgia";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="verdana"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="verdana"]::before {
+  font-family: "Verdana", sans-serif;
+  content: "Verdana";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="sofia"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="sofia"]::before {
+  font-family: "Sofia", cursive;
+  content: "Sofia";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="roboto"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="roboto"]::before {
+  font-family: "Roboto", sans-serif;
+  content: "Roboto";
+}
+
+/* Set content font-families */
+
+.ql-font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.ql-font-arial {
+  font-family: "Arial", sans-serif;
+}
+
+.ql-font-times-new-roman {
+  font-family: "Times New Roman", serif;
+}
+
+.ql-font-courier-new {
+  font-family: "Courier New", monospace;
+}
+
+.ql-font-georgia {
+  font-family: "Georgia", serif;
+}
+
+.ql-font-verdana {
+  font-family: "Verdana", sans-serif;
+}
+
+.ql-font-sofia {
+  font-family: "Sofia", cursive;
+}
+
+.ql-font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+
+.ql-editor {
+  font-family: inherit !important;
+}
+
+.ql-snow .ql-editor {
+  font-family: inherit !important;
+}
+
+// Set dropdown font-sizes
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="10px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="10px"]::before {
+  font-size: 10px;
+  content: "10px";
+}
+
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="12px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="12px"]::before {
+  font-size: 12px;
+  content: "12px";
+}
+
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="14px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="14px"]::before {
+  font-size: 14px;
+  content: "14px";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="16px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+  font-size: 16px;
+  content: "16px";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="18px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+  font-size: 18px;
+  content: "18px";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="20px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="20px"]::before {
+  font-size: 20px;
+  content: "20px";
+}
+
+/* Set content sizes */
+/* Размеры текста */
+.ql-size-10px { font-size: 10px !important; }
+.ql-size-12px { font-size: 12px !important; }
+.ql-size-14px { font-size: 14px !important; }
+.ql-size-16px { font-size: 16px !important; }
+.ql-size-18px { font-size: 18px !important; }
+.ql-size-20px { font-size: 20px !important; }
+
+/* Важно: сброс наследования */
+.ql-editor {
+  font-size: inherit !important;
+}
+.ql-snow .ql-editor {
+  font-size: inherit !important;
+}
+
+
+// Set dropdown title
+
+/* Стили для заголовков в выпадающем списке */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: "Normal";
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: "H2";
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: "H3";
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: "H4";
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: "H5";
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: "H6";
+}
+
+
+@media screen and (max-width: 991px) {
+  #root {
+    padding-top: 77px;
+  }
+}

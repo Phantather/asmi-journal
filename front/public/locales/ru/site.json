@@ -1,0 +1,15 @@
+{
+  "form": {
+    "diplom": "project-unique-title"
+  },
+  "warning": "Внимание!",
+  "isFreeApp": "государственная программа, предоставляется бесплатно!",
+  "registry": "project-unique-registry",
+  "copyright": "© МОН КР все права защищены",
+  "createdBy": "Разработано ГУ “Центр Цифрового образования” при МОН КР",
+  "links": {
+    "agreement": "Пользовательское соглашение",
+    "privacyPolicy": "Политика конфиденциальности",
+    "technicalSupport": "Техподдержка е-майл"
+  }
+}
